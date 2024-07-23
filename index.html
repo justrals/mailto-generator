@@ -1,19 +1,23 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mailto:generator</title>
     <link rel="stylesheet" src="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <h1>mailto:generator</h1>
     <p>Simple mailto link generator</p>
-    <input type="text" placeholder="email">
-    <input type="text" placeholder="subject line">
-    <input type="text" placeholder="carbon copy">
-    <input type="text" placeholder="blind carbon copy">
-    <input type="text" placeholder="body text">
-    <p>Your link: <p id="output"></p></p>
+    <form>
+      <input type="text" placeholder="email" required>
+      <input type="text" placeholder="subject line">
+      <input type="text" placeholder="carbon copy">
+      <input type="text" placeholder="blind carbon copy">
+      <input type="text" placeholder="body text">
+      <button type="submit" id="generate-button">Generate</button>
+    </form>
+    <p>Your link:</p>
+    <output id="output"></output>
 </body>
 </html>
