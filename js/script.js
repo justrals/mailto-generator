@@ -1,8 +1,11 @@
-let baseLink = '<a href="mailto:">';
-let output = document.querySelector('#output');
+let baseLink = 'mailto:';
+let emailInput = document.querySelector('.email');
 
-output.textContent = baseLink;
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('output').textContent = baseLink;
+    console.log(output.textContent);
+});
 
-let generateLink = function () {
-
-};
+emailInput.addEventListener('input', function () {
+    console.log('test');
+});
