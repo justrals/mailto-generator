@@ -4,17 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mailto:generator</title>
     <link rel="stylesheet" src="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
     <h1>mailto:generator</h1>
     <p>Simple mailto link generator</p>
-    <input type="text" placeholder="email" id="email" class="email">
-    <input type="text" placeholder="subject line">
-    <input type="text" placeholder="carbon copy">
-    <input type="text" placeholder="blind carbon copy">
-    <input type="text" placeholder="body text">
+    <form>
+      <input type="text" placeholder="email" id="email" required>
+      <input type="text" placeholder="subject line">
+      <input type="text" placeholder="carbon copy">
+      <input type="text" placeholder="blind carbon copy">
+      <input type="text" placeholder="body text">
+    </form>
     <p>Your link:</p>
-    <p id="output"></p>
+    <output id="output"></output>
+    <script src="js/script.js"></script>
 </body>
 </html>

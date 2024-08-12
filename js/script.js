@@ -1,11 +1,11 @@
 let baseLink = 'mailto:';
-let emailInput = document.querySelector('.email');
+let output = document.getElementById('output');
+let form = document.querySelector('form');
 
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('output').textContent = baseLink;
-    console.log(output.textContent);
+output.textContent = baseLink;
+
+form.addEventListener('change', function() {
+    const email = document.getElementById('email').value;
+    output.textContent = `${baseLink}${email}`;
 });
 
-emailInput.addEventListener('input', function () {
-    console.log('test');
-});
